@@ -79,7 +79,9 @@ Contamos com uma equipe dedicada para manutenção contínua da API, assegurando
   - [Confluence](https://www.atlassian.com/software/confluence)
 - **Plataforma de Deploy:**
   - Desenvolvimento [Pythonanywhere](https://www.pythonanywhere.com/)
-
+- **API EM AMBIENTE DE DESENVOLVIMENTO:**
+  - API [DESENVOLVIMENTO](https://onggabriel.pythonanywhere.com/api/v1/) (https://onggabriel.pythonanywhere.com/api/v1/)
+    
 Essa combinação de tecnologias foi escolhida para garantir eficiência, escalabilidade e facilidade de manutenção do projeto.
 
 
