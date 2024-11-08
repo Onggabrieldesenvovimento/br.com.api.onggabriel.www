@@ -1,75 +1,84 @@
-# Projeto BuscaFarma - Proposta MVP
+# Projeto Site Intitucional Ong Gabriel - BackEnd
 
-## Introdução
+### Introdução
+Este repositório contém o código-fonte e a documentação para o desenvolvimento do **back-end** do site institucional da **ONG Gabriel**. O objetivo principal da **ONG Gabriel** é **prevenir o suicídio e promover o bem-estar mental de jovens em situação de vulnerabilidade social**. Através de ações voltadas para o apoio psicológico, educação em saúde mental e criação de espaços seguros de acolhimento, a ONG busca impactar positivamente a vida dos jovens e suas comunidades, garantindo acesso a recursos e suporte emocional para aqueles que mais precisam.
 
-Bem-vindo ao projeto BuscaFarma! Este repositório contém o código-fonte e a documentação para o desenvolvimento do nosso aplicativo inovador. O BuscaFarma tem como objetivo principal facilitar a comparação de preços e a localização de farmácias, resolvendo a principal dor do cliente: **_a dificuldade de encontrar um site confiável para consulta e comparação de preços de medicamentos_**.
+### Sobre o Projeto
+Este projeto é fruto de uma parceria voluntária entre o **Pipoca Ágil** e a **ONG Gabriel**, com o objetivo de desenvolver uma **plataforma moderna e personalizada** que facilite o acesso a uma rede de apoio emocional para jovens em situação de vulnerabilidade. A plataforma permitirá que as pessoas encontrem ajuda, compartilhem suas experiências, esclareçam dúvidas sobre saúde mental e participem de um ambiente de suporte emocional.
 
-## Esse Projeto
+Nosso foco é **criar um sistema intuitivo e acessível**, onde os usuários possam obter informações relevantes, interagir com a comunidade e acessar recursos voltados para o bem-estar mental, tudo com o objetivo de **prevenir o suicídio e promover a saúde mental**.
 
-Esse projeto faz parte de uma iniciativa voluntária criada pelo **[Pipoca Ágil](https://pipocaagil.com.br/)** com o objetivo de ajudar as pessoas a buscar medicamentos e sanar suas dúvidas. Abaixo trazemos a proposta de MVP.
+### Proposta do MVP (Produto Mínimo Viável)
+O MVP da plataforma terá as seguintes funcionalidades essenciais:
 
-## Proposta MVP - BuscaFarma
+1. **Cadastro e Autenticação de Usuários**: Permitir que os usuários se registrem e façam login de forma segura para acessar suas informações e interagir com a plataforma.
+2. **Blog com Publicação de Posts**: Uma seção de blog onde serão publicados conteúdos sobre saúde mental, bem-estar, prevenção ao suicídio e eventos da ONG, visando fornecer informações e promover discussões construtivas.
+3. **Seção de Comentários e Avaliações**: Uma funcionalidade para que os voluntários e participantes do projeto possam compartilhar suas experiências e feedback sobre os conteúdos do blog e as atividades da ONG.
+4. **Sistema de Moderação de Conteúdo**: Garantir que os posts do blog e os comentários sejam moderados antes de serem publicados para manter um ambiente seguro e respeitoso.
+5. **API de Gestão de Conteúdo**: Gerenciamento de conteúdos relacionados à saúde mental, atividades, eventos e recursos de apoio psicológico.
 
-### Aplicativo para Compartilhar Preços e Localização de Medicamentos
+### Funcionalidades Principais
 
-O BuscaFarma permitirá que os usuários compartilhem os preços de medicamentos e a localização das farmácias onde encontraram os produtos, utilizando um mapa interativo.
+#### Cadastro de Usuários e Autenticação
+A API permitirá o **cadastro de usuários** e **autenticação** segura utilizando **tokens JWT**. O sistema de login será robusto e garantirá que as informações dos usuários sejam mantidas protegidas, criando uma experiência de acesso personalizada e segura.
 
-### Busca por Farmácias com Atendimento pelo SUS e Localização
+#### Blog com Publicação de Posts
+A API permitirá a **criação, leitura, atualização e exclusão (CRUD)** de posts do blog. Esses posts serão publicados com temas relacionados ao **bem-estar mental**, **prevenção ao suicídio**, **experiências de superação**, **eventos da ONG** e **dicas de apoio psicológico**. O blog será uma ferramenta de educação, apoio e disseminação de informações úteis para os jovens e suas famílias.
 
-O aplicativo exibirá farmácias que oferecem atendimento pelo SUS, incluindo farmácias 24 horas, com geolocalização precisa.
+#### Seção de Comentários e Avaliações com Moderação
+A API incluirá um **endpoint dedicado** para a gestão de **comentários e avaliações**, onde os voluntários, participantes e usuários poderão compartilhar suas experiências sobre os posts do blog, eventos e atividades da ONG. Todos os comentários serão moderados antes de serem publicados.
 
-### Consulta de Medicamentos do SUS e Farmácias Populares
+#### Área de Administração para Moderação de Conteúdo
+Será implementada uma **área de administração** onde os administradores poderão revisar, aprovar ou excluir posts e comentários. Esse sistema de moderação ajudará a garantir que o conteúdo publicado seja sempre respeitoso, relevante e alinhado com os valores da ONG.
 
-O BuscaFarma disponibilizará uma lista de medicamentos fornecidos pelo SUS para consulta rápida, ajudando os usuários a encontrar os remédios de que precisam.
+### Objetivo do MVP
+O objetivo principal deste MVP é construir uma **plataforma de apoio emocional** que ajude os usuários a encontrarem recursos, compartilhem experiências de superação e participem de um ambiente seguro e acolhedor. As funcionalidades principais incluem:
 
-## Objetivo do MVP
+- **Cadastro de usuários** com autenticação segura.
+- **Blog com funcionalidade CRUD de posts** para disseminação de conteúdos sobre saúde mental.
+- **Sistema de comentários e avaliações** para promover a troca de experiências.
+- **Moderação de conteúdo** para garantir que apenas conteúdo adequado seja publicado.
+- **API de gestão de conteúdo** e de interações entre usuários, voluntários e administradores.
 
-Facilitar a comparação de preços e a localização de farmácias, ajudando os usuários a encontrar as melhores opções de medicamentos de forma rápida e eficiente.
+### Proposta Incrementada e Pontos de Destaque
 
-## Proposta Incrementada e Pontos de Destaque
+#### Endpoint de Autenticação Segura
+Usaremos **JWT (JSON Web Tokens)** para garantir a autenticação segura dos usuários, protegendo suas informações e sessões de acesso. Esse método de autenticação será implementado de forma robusta para garantir a integridade e privacidade dos dados.
 
-### Integração de Mapas e Dados em Tempo Real
+#### Paginação Eficiente de Posts e Comentários
+A listagem de **posts do blog** e **comentários** será paginada, permitindo que o conteúdo seja carregado de maneira eficiente sem comprometer o desempenho da API, mesmo com um grande número de dados.
 
-Estabeleceremos parcerias com farmácias para atualização constante de preços e estoques, garantindo que nossos usuários tenham acesso às informações mais recentes.
+#### Sistema de Comentários e Avaliações com Moderação
+Implementaremos um sistema interativo de **comentários e avaliações** para que os usuários compartilhem suas experiências e sugestões sobre os posts do blog e as atividades da ONG. Todos os comentários passarão por um processo de **moderação prévia** para manter o ambiente saudável e seguro.
 
-### Parcerias Estratégicas
+#### Expansão de Funcionalidades Futuras
+Em versões futuras, a API poderá ser expandida para incluir:
+- **Criação e gestão de eventos** como rodas de conversa, workshops e atividades voltadas à promoção do bem-estar mental.
+- **Sistema de categorias e tags** para organizar os posts de forma mais eficiente.
+- **Integração com sistemas externos** para disponibilizar conteúdos multimídia, como vídeos e podcasts sobre saúde mental.
 
-Buscaremos parcerias com fabricantes e farmácias para oferecer descontos exclusivos e programas de fidelização aos nossos usuários.
+#### Suporte e Manutenção Contínuos
+Contamos com uma equipe dedicada para manutenção contínua da API, assegurando que a plataforma esteja sempre atualizada e segura, com o objetivo de oferecer a melhor experiência aos usuários e garantir a eficácia das ações da ONG Gabriel.
 
-### Assistente Virtual Multifunções
-
-Implementaremos um chatbot multifuncional para fornecer informações sobre medicamentos, alternativas genéricas e suporte em saúde, como primeiros socorros.
-
-### Solução para Privacidade e Conformidade
-
-Adotaremos medidas rigorosas de segurança da informação para garantir a conformidade com a LGPD, protegendo a privacidade dos nossos usuários.
-
-### Suporte e Manutenção Contínuos
-
-Contamos com uma equipe dedicada para manutenção e suporte, assegurando a qualidade contínua do serviço e a satisfação dos nossos usuários.
-
-Agradecemos por se juntar a nós nesta jornada para transformar a maneira como as pessoas encontram e comparam medicamentos. Juntos, podemos tornar o acesso à saúde mais fácil e acessível para todos.
-
-## Tecnologias Utilizadas
-
-Durante o desenvolvimento deste projeto, foram empregadas as seguintes tecnologias:
 
 - **Linguagem de Programação:** 
   - [Pyton](https://www.python.org/)
-  - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - **Frameworks e Bibliotecas:**
-  - [Vite](https://vitejs.dev/)
   - [Django](https://www.djangoproject.com/)
-  - [Link]()
-  - [Link]()
-- **Banco de Dados:** [PostgreSQL](https://www.postgresql.org/)
-- **Controle de Versão:** [Git](https://git-scm.com/)
+  - [Django Rest Framework](https://www.django-rest-framework.org/)
+  - [Django Simple JWT](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/)
+  - [Django Cors Headers](https://pypi.org/project/django-cors-headers/)
+  - [Pillow](https://pypi.org/project/pillow/)
+- **Banco de Dados:**
+  - [PostgreSQL](https://www.postgresql.org/)
+- **Controle de Versão:**
+  - [Git](https://git-scm.com/)
   - Repositório hospedado no [GitHub](https://github.com/)
 - **Ferramentas de Gestão e Colaboração:**
   - [Jira](https://www.atlassian.com/software/jira)
   - [Confluence](https://www.atlassian.com/software/confluence)
 - **Plataforma de Deploy:**
-  - [Docker](https://www.docker.com/)
+  - Desenvolvimento [Pythonanywhere](https://www.pythonanywhere.com/)
 
 Essa combinação de tecnologias foi escolhida para garantir eficiência, escalabilidade e facilidade de manutenção do projeto.
 
@@ -87,11 +96,23 @@ Essa combinação de tecnologias foi escolhida para garantir eficiência, escala
       <td align="center">
         <img src="https://avatars.githubusercontent.com/u/108550945?v=4" width="100" ><br>
         <a href="https://github.com/thiagoferreirapy" ><b>Thiago Ferreira</b></a><br>
+        <i>FullStack</i>
+      </td>
+      <td align="center">
+        <img src="https://avatars.githubusercontent.com/u/133518001?v=4" width="100" ><br>
+        <a href="https://github.com/debCristina" ><b>Débora Ferreira</b></a><br>
         <i>BackEnd</i>
       </td>
+    </tr>
+    <tr>
       <td align="center">
         <img src="https://avatars.githubusercontent.com/u/91827021?v=4" width="100" ><br>
         <a href="https://github.com/viotto-lucas" ><b>Lucas Viotto</b></a><br>
+        <i>FrontEnd</i>
+      </td>
+      <td align="center">
+        <img src="https://avatars.githubusercontent.com/u/96319650?v=4" width="100" ><br>
+        <a href="https://github.com/rafaelrgsenhorinho" ><b>Rafael Senhorinho</b></a><br>
         <i>FrontEnd</i>
       </td>
     </tr>
@@ -99,6 +120,11 @@ Essa combinação de tecnologias foi escolhida para garantir eficiência, escala
       <td align="center">
         <img src="https://avatars.githubusercontent.com/u/56051094?v=4" width="100" ><br>
         <a href="https://github.com/TiagoMata" ><b>Tiago Mata</b></a><br>
+        <i>QA</i>
+      </td>
+      <td align="center">
+        <img src="https://avatars.githubusercontent.com/u/142944584?v=4" width="100" ><br>
+        <a href="https://github.com/Nathalia-Michelon" ><b>Nathalia-Michelon</b></a><br>
         <i>QA</i>
       </td>
     </tr>
