@@ -1,8 +1,8 @@
 ---
-name: protocolo---solicitante---descricao---feature
+name: ISSUE TEMPLATE FOR FEATURE
 about: Suggest an idea for this project
-title: ''
-labels: ''
+title: PROTOCOLO | SOLICITANTE | TITULO DA DEMANDA | FEATURE
+labels: feature
 assignees: ''
 
 ---

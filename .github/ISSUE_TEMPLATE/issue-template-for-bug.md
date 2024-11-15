@@ -1,8 +1,8 @@
 ---
-name: protocolo---solicitante---descricao---bug
+name: ISSUE TEMPLATE FOR BUG
 about: Create a report to help us improve
-title: ''
-labels: ''
+title: PROTOCOLO | SOLICITANTE | TITULO DA DEMANDA | BUG
+labels: bug
 assignees: ''
 
 ---
