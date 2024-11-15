@@ -1,6 +1,6 @@
 ---
 name: ISSUE TEMPLATE FOR FEATURE
-about: Suggest an idea for this project
+about: 'Use this template to suggest new features or improvements for the system. '
 title: PROTOCOLO | SOLICITANTE | TITULO DA DEMANDA | FEATURE
 labels: feature
 assignees: ''

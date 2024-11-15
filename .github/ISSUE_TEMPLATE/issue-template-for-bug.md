@@ -1,6 +1,6 @@
 ---
 name: ISSUE TEMPLATE FOR BUG
-about: Create a report to help us improve
+about: 'Use this template to report issues or unexpected behaviors in the system. '
 title: PROTOCOLO | SOLICITANTE | TITULO DA DEMANDA | BUG
 labels: bug
 assignees: ''
