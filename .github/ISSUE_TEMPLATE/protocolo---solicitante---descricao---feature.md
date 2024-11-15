@@ -1,3 +1,12 @@
+---
+name: protocolo---solicitante---descricao---feature
+about: Suggest an idea for this project
+title: ''
+labels: ''
+assignees: ''
+
+---
+
 # O que essa nova implementação faz?
 Descreva claramente o que essa nova funcionalidade faz. Explique o objetivo da implementação e o problema que ela resolve ou a melhoria que ela traz. Seja o mais específico possível sobre a funcionalidade que foi adicionada ou modificada.
 
@@ -23,6 +32,7 @@ Liste todos os arquivos que foram modificados ou adicionados para implementar a 
 Caso novas bibliotecas ou dependências tenham sido incluídas, informe o nome delas e como instalá-las. Exemplo:
 
 - `libexemplo`: Para instalar, execute:
+
   ```bash
   pip install libexemplo
   ```
@@ -45,4 +55,3 @@ Se possível, forneça capturas de tela ou imagens que mostrem as mudanças real
 Inclua aqui observações adicionais, se necessário, para contextualizar ou alertar sobre algo relevante para essa implementação. Exemplo:
 
 > **Nota:** Sem observações.
-

@@ -1,3 +1,12 @@
+---
+name: protocolo---solicitante---descricao---bug
+about: Create a report to help us improve
+title: ''
+labels: ''
+assignees: ''
+
+---
+
 # Descrição do Bug
 
 Descreva claramente o comportamento inesperado ou o erro que está ocorrendo. Explique **o que** aconteceu, **quando** ocorreu e **como** foi percebido. Tente ser o mais específico possível para facilitar a investigação.
