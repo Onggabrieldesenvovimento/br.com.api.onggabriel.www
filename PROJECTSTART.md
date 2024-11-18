@@ -21,7 +21,7 @@ Antes de começar, certifique-se de ter os seguintes pré-requisitos instalados 
 2. [Git](https://git-scm.com/downloads) (Controle de versão)
 3. Instale o **VirtualEnv** para criar ambientes virtuais no seu projeto:
    ```bash
-   # No seu terminal / PowerShell digite o seguinte comando para baixar o virtualenv:
+   # Em seu PowerShell digite o seguinte comando para baixar o virtualenv:
     pip install virtualenv
    
   4. Após instalar o (virtualenv) é importante configurar o powershell para poder ativar o ambiente virtual
@@ -55,17 +55,17 @@ Antes de começar, certifique-se de ter os seguintes pré-requisitos instalados 
       code .
     
    ```
-3. Com o projeto aberto você pode ativar/criar o ambiente virtual:
+3. Com o projeto aberto no VSCODE, você pode ativar/criar o ambiente virtual:
    - Para Windons:
-Entre na pasta do projeto e rode os seguintes códigos no terminal:
+No seu terminal do vscode, rode os seguintes códigos no terminal:
     ```bash
-    #Utilizando Prompt de comando/terminal
+    #Utilizando Prompt de comando (CMD)
     
     #1- Criar a VENV
     python -m venv venv
     
     #2- Ativar a VENV
-    \venv\Scripts\activate.bat
+    .\venv\Scripts\activate.bat
     
     #3- Atualizar o pip
     python -m pip install --upgrade pip
@@ -140,10 +140,28 @@ Entre na pasta do projeto e rode os seguintes códigos no terminal:
       python manage.py runserver 8000
   
    ```
-  O servidor estará acessível em: [http://localhost:8000/](http://localhost:8000/) 
+  O servidor estará acessível em: [http://localhost:8000/](http://localhost:8000/ap1/v1/user) 
   
   
+ ### 🚩💻 Endpoints
+ *Atenção*: O Framework Django disponibiliza uma interface que facilita os testes de api
+  - Criar ou listar usuários: http://localhost:8000/api/v1/user/
+  - Utilizando Swagger: http://localhost:8000/swagger/
+  - Utilizando Redoc: http://localhost:8000/redoc/
 
+<br/>
+
+#### Exemplos de requisições:
+
+  ```bash
+      # METODO POST para cadastrar um usuário (http://localhost:8000/api/v1/user/)
+      {
+          "name": string,
+          "email": string,
+          "cpf": string,
+          "password": string
+      }
+```
 
 <h1 align="center">MUITO OBRIGADO PELA VISITA!</h1>
 
