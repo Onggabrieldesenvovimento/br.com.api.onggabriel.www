@@ -19,7 +19,7 @@ Explique como acessar a nova funcionalidade ou onde ela pode ser encontrada no s
 > **Nota:** Adicione aqui uma nota se for necessário.
 
 
-# Quais arquivos foram alterados?
+# Quais arquivos foram alterados ou adicionados?
 
 Liste todos os arquivos que foram modificados ou adicionados para implementar a nova funcionalidade. Exemplo:
 
@@ -43,7 +43,7 @@ Caso novas bibliotecas ou dependências tenham sido incluídas, informe o nome d
 
 Se possível, forneça capturas de tela ou imagens que mostrem as mudanças realizadas. Isso pode incluir exemplos de como as páginas, rotas ou interfaces se comportam após a implementação. Exemplo:
 
-- **Alteração no arquivo `urls.py`**: Configuração das rotas para Swagger e Redoc.  
+- **Configuração do Swagger no arquivo `urls.py`**:   
   ![Configuração no arquivo `urls.py`](url da imagem)
 
 - **Alteração no arquivo `settings.py`**: Configuração do `INSTALLED_APPS` e ajustes para integração do Swagger.  
