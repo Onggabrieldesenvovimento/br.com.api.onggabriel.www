@@ -33,8 +33,9 @@ INSTALLED_APPS = [
     'drf_yasg',
     'rest_framework',
     'corsheaders',
-
-    'authentication'
+    #my_apps
+    'authentication',
+    'userblog',
 ]
 
 MIDDLEWARE = [
