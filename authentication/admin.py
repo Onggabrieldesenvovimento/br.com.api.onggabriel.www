@@ -5,3 +5,5 @@ from .models import CustomUser
 class CustomUserAdmin(admin.ModelAdmin):
     list_display = ('id','name', 'email', 'cpf', 'is_active', 'is_staff')
     search_fields = ('email', 'name', 'cpf')
+
+
