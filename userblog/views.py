@@ -24,3 +24,4 @@ class MediaBlogCreateListView(generics.ListCreateAPIView):
     queryset = MediaBlog.objects.all()
     serializer_class = MediaBlogSerializer
     
+

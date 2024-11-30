@@ -39,4 +39,4 @@ class PostScheduleSerializer(serializers.ModelSerializer):
             raise ValidationError("A data de agendamento não pode ser no passado.")
         return data
 
-
+        

@@ -6,6 +6,6 @@ from rest_framework import status
 
 
 class CustomUserCreateListView(generics.ListCreateAPIView):
-    queryset = CustomUser.objects.all()
+    queryset = CustomUser.objects.filter(is_staff = False)
     serializer_class = CustomUserSerializer
     
