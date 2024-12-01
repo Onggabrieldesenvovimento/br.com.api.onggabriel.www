@@ -28,13 +28,15 @@ class CustomUserManager(BaseUserManager):
 
 
 class CustomUser(AbstractBaseUser, PermissionsMixin):
-    id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
-    email = models.EmailField(unique=True)
-    name = models.CharField(max_length=255)
-    cpf = models.CharField(max_length=11, unique=True)
-    is_active = models.BooleanField(default=True)
-    is_staff = models.BooleanField(default=False)
-
+    id = models.UUIDField(primary_key=True, default=uuid4, editable=False, verbose_name='ID')
+    email = models.EmailField(unique=True, verbose_name='Email')
+    name = models.CharField(max_length=255, verbose_name='Nome')
+    cpf = models.CharField(max_length=11, unique=True, verbose_name='CPF')
+    is_active = models.BooleanField(default=True, verbose_name='Ativo')
+    is_staff = models.BooleanField(default=False, verbose_name='Administrador')
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name='Data de criação')
+    updated_at = models.DateTimeField(auto_now=True, verbose_name='Última atualização')
+    
     objects = CustomUserManager()
 
     USERNAME_FIELD = 'email'
@@ -54,6 +56,11 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
         related_name='customuser_user_permissions', 
         related_query_name='customuser_user_permission',
     )
+
+    class Meta:
+        ordering = ['name', 'email'] 
+        verbose_name = 'Usuário'
+        verbose_name_plural = 'Usuários' 
 
     def __str__(self):
         return self.name
