@@ -3,7 +3,6 @@ from .models import Post, Category, PostSchedule, MediaPost
 from django.http import HttpResponse
 import csv
 
-
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
     list_display = ('title', 'category', 'created_at', 'published')
