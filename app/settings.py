@@ -23,7 +23,6 @@ CORS_ALLOWED_ORIGINS = [
 # Application definition
 
 INSTALLED_APPS = [
-    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -128,58 +127,3 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-JAZZMIN_SETTINGS = {
-    'site_title': 'Ong Gabriel',
-    'site_header': 'Administração da Ong Gabriel',
-    'site_brand': 'Ong Gabriel',
-
-    'icons': {
-        'auth': 'fas fa-users-cog',
-        'auth.user': 'fas fa-user',
-        'auth.Group': 'fas fa-users',
-        'authentication.CustomUser': 'fas fa-user-pen',
-        'userblog.Post': 'fas fa-newspaper',
-        'userblog.PostSchedule': 'fas fa-calendar-days',
-        'userblog.Category': 'fas fa-object-ungroup',
-        'userblog.MediaPost': 'fas fa-photo-film',
-    },
-    
-    'welcome_sign': 'Bem-vindo(a) ao ADM Ong Gabriel',
-    'copyright': 'Ong Gabriel - desenvolvido por Squad Luz Rosa',
-    'search_model': ['userblog.Post', 'userblog.PostSchedule',],
-    'show_ui_builder': True,
-}
-
-
-JAZZMIN_UI_TWEAKS = {
-    "navbar_small_text": False,
-    "footer_small_text": False,
-    "body_small_text": False,
-    "brand_small_text": False,
-    "brand_colour": False,
-    "accent": "accent-primary",
-    "navbar": "navbar-white navbar-light",
-    "no_navbar_border": False,
-    "navbar_fixed": False,
-    "layout_boxed": False,
-    "footer_fixed": False,
-    "sidebar_fixed": False,
-    "sidebar": "sidebar-dark-primary",
-    "sidebar_nav_small_text": False,
-    "sidebar_disable_expand": False,
-    "sidebar_nav_child_indent": False,
-    "sidebar_nav_compact_style": False,
-    "sidebar_nav_legacy_style": False,
-    "sidebar_nav_flat_style": False,
-    "theme": "lux",
-    "dark_mode_theme": None,
-    "button_classes": {
-        "primary": "btn-outline-primary",
-        "secondary": "btn-outline-secondary",
-        "info": "btn-info",
-        "warning": "btn-warning",
-        "danger": "btn-danger",
-        "success": "btn-success"
-    }
-}
