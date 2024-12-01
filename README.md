@@ -93,7 +93,7 @@ Essa combinação de tecnologias foi escolhida para garantir eficiência, escala
       <td align="center">
         <img src="https://avatars.githubusercontent.com/u/50967217?v=4" width="100" ><br>
         <a href="https://github.com/neresfabio" ><b>Fábio Neres</b></a><br>
-        <i>FullStack</i>
+        <i>Devops</i>
       </td>
       <td align="center">
         <img src="https://avatars.githubusercontent.com/u/108550945?v=4" width="100" ><br>
