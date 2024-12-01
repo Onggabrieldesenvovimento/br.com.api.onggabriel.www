@@ -1,11 +1,11 @@
 from django.urls import path
-from .views import BlogCreateListView, CategoryCreateListView, PostScheduleCreateListView, MediaBlogCreateListView
+from .views import PostCreateListView, CategoryCreateListView, PostScheduleCreateListView, MediaPostCreateListView
 
 urlpatterns = [
-    path('posts/', BlogCreateListView.as_view(), name='blogs-create-list'),
-    path('categories/', CategoryCreateListView.as_view(), name='categories-create-list'),
+    path('posts/', PostCreateListView.as_view(), name='post-create-list'),
+    path('category/', CategoryCreateListView.as_view(), name='categories-create-list'),
     path('postschedule/', PostScheduleCreateListView.as_view(), name='postschedule-create-list'),
-    path('media/', MediaBlogCreateListView.as_view(), name='media-create-list'),
+    path('media/', MediaPostCreateListView.as_view(), name='media-create-list'),
 ]
 
 

@@ -1,13 +1,13 @@
 from rest_framework import generics
-from .models import Blog, Category, PostSchedule, MediaBlog
-from .serializers import BlogSerializer, CategorySerializer, PostScheduleSerializer, MediaBlogSerializer
+from .models import Post, Category, PostSchedule, MediaPost
+from .serializers import PostSerializer, CategorySerializer, PostScheduleSerializer, MediaPostSerializer
 from rest_framework.response import Response
 from rest_framework import status
 
 
-class BlogCreateListView(generics.ListCreateAPIView):
-    queryset = Blog.objects.all()
-    serializer_class = BlogSerializer
+class PostCreateListView(generics.ListCreateAPIView):
+    queryset = Post.objects.all()
+    serializer_class = PostSerializer
 
 class CategoryCreateListView(generics.ListCreateAPIView):
     queryset = Category.objects.all()
@@ -20,7 +20,7 @@ class PostScheduleCreateListView(generics.ListCreateAPIView):
     def perform_create(self, serializer):
         serializer.save()
 
-class MediaBlogCreateListView(generics.ListCreateAPIView):
-    queryset = MediaBlog.objects.all()
-    serializer_class = MediaBlogSerializer
+class MediaPostCreateListView(generics.ListCreateAPIView):
+    queryset = MediaPost.objects.all()
+    serializer_class = MediaPostSerializer
     
