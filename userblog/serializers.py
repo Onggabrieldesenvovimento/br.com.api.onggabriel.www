@@ -36,4 +36,3 @@ class PostScheduleSerializer(serializers.ModelSerializer):
         if data['scheduled_at'] < timezone.now():
             raise ValidationError("A data de agendamento não pode ser no passado.")
         return data
-
