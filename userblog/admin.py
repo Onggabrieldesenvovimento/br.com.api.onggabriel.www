@@ -5,7 +5,7 @@ import csv
 
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
-    list_display = ('title', 'category', 'created_at', 'published')
+    list_display = ('title', 'category__title', 'created_at', 'published')
     search_fields = ('id', 'title', 'category__title', 'published')
     list_filter = ('title','category__title', 'published')
 
