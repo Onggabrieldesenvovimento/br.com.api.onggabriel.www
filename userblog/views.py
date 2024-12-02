@@ -6,6 +6,10 @@ from rest_framework import status
 
 
 class PostCreateListView(generics.ListCreateAPIView):
+    queryset = Post.objects.filter(state_type = 'active').all()
+    serializer_class = PostSerializer
+
+class PostRetrieverUpdateView(generics.RetrieveUpdateAPIView):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
 

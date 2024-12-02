@@ -30,10 +30,17 @@ class Post(models.Model):
     likes = models.IntegerField(default=0, verbose_name='Curtidas')
     views = models.IntegerField(default=0, verbose_name='Visualisações')
 
+    STATE_TYPES = (
+        ('active', 'ativo'),
+        ('archived', 'arquivado'),
+        ('deleted', 'deletado'),
+    )
+
+    state_type = models.CharField(max_length=10, choices=STATE_TYPES, default="active",verbose_name='Estado do post')
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Data de criação')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='Última atualização')
     published = models.BooleanField(default=False, verbose_name='Publicado')  
-    published_at = models.DateTimeField(null=True, blank=True, verbose_name='Data de publicação') 
+    published_at = models.DateTimeField(null=True, blank=True, verbose_name='Data de publicação')     
 
     class Meta:
         ordering = ['title', 'created_at', 'published']
