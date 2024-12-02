@@ -25,7 +25,7 @@ class Post(models.Model):
     user_id = models.ForeignKey(CustomUser, related_name='blog_users' , on_delete=models.PROTECT, verbose_name='ID do usuário')
     category = models.ManyToManyField(Category, related_name='posts', verbose_name='Categorias')
     title = models.CharField(max_length=255, verbose_name='Título')
-    description = models.TextField(verbose_name='DEscrição')
+    description = models.TextField(verbose_name='Descrição')
     content = models.TextField(verbose_name='Conteúdo')
     likes = models.IntegerField(default=0, verbose_name='Curtidas')
     views = models.IntegerField(default=0, verbose_name='Visualisações')
