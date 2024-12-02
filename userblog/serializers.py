@@ -13,7 +13,7 @@ class PostSerializer(serializers.ModelSerializer):
     media = MediaPostSerializer(many=True, read_only=True) 
     class Meta:
         model = Post
-        fields = ['id', 'user_id', 'category', 'title', 'content', 'state_type', 'created_at', 'updated_at', 'published', 'published_at', 'media']
+        fields = ['id', 'user_id', 'category', 'title', 'description', 'content', 'state_type', 'created_at', 'updated_at', 'published', 'published_at', 'media']
 
     #TODO: Adicionar os dados de ['likes', 'views'] na resposta da api
     
