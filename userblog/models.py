@@ -23,17 +23,24 @@ class Category(models.Model):
 class Post(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False, verbose_name='ID')
     user_id = models.ForeignKey(CustomUser, related_name='blog_users' , on_delete=models.PROTECT, verbose_name='ID do usuário')
-    category = models.ForeignKey(Category, related_name='category', on_delete=models.PROTECT, verbose_name='Categoria')
+    category = models.ManyToManyField(Category, related_name='posts', verbose_name='Categorias')
     title = models.CharField(max_length=255, verbose_name='Título')
-    description = models.TextField(verbose_name='DEscrição')
+    description = models.CharField(max_length=255, verbose_name='Descrição')
     content = models.TextField(verbose_name='Conteúdo')
     likes = models.IntegerField(default=0, verbose_name='Curtidas')
     views = models.IntegerField(default=0, verbose_name='Visualisações')
 
+    STATE_TYPES = (
+        ('active', 'ativo'),
+        ('archived', 'arquivado'),
+        ('deleted', 'deletado'),
+    )
+
+    state_type = models.CharField(max_length=10, choices=STATE_TYPES, default="active",verbose_name='Estado do post')
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Data de criação')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='Última atualização')
     published = models.BooleanField(default=False, verbose_name='Publicado')  
-    published_at = models.DateTimeField(null=True, blank=True, verbose_name='Data de publicação') 
+    published_at = models.DateTimeField(null=True, blank=True, verbose_name='Data de publicação')     
 
     class Meta:
         ordering = ['title', 'created_at', 'published']
